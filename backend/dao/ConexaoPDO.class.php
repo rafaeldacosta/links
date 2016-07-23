@@ -35,7 +35,7 @@
 	     */ 
 	    private function conexaoServidor($host)
 	    {
-	        $conexoes = array('localhost' => array('mysql:host=localhost; port=3306; dbname=test;','root',''),
+	        $conexoes = array('localhost' => array('mysql:host=localhost; port=3306; dbname=links;','root',''),
 	                        '127.0.0.1'	=> array('mysql:host=127.0.0.1; port=3306; dbname=test;','root',''),
 	                        'localhost:8080' => array('mysql:host=localhost; port=3306; dbname=test;','root',''), 
 	                        '10.200.2.134' => array('mysql:host=127.0.0.1; port=3306; dbname=test;','homolog','homolog'),

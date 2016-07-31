@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 	/**
-	* 
+	*
 	*/
 	class Velocidade
 	{
@@ -15,33 +15,28 @@
 			$this->status 		= $p['status'];
 		}
 
-
-		public function NewVelocidade(Velocidade $v){
-			try{
-
-				$query = "INSERT INTO VElocidade"
-
-			}catch(Exception $e){
-				echo "Mensagem: ".$e->getMessage();
-			}
+		public function setIdVelocidade($id){
+			$this->id = $id;
 		}
 
-
-		public function GetAllListVelocidade(){
-			try{
-				$query = "SELECT * FROM velocidade ORDER by velocidade ASC";
-
-			}catch(Exception $e){
-				echo "Mensagem: ".$e->getMessage();
-			}
+		public function getIdVelocidade(){
+			return $this->id;
 		}
 
-		public function UpdateVelocidade(){
-			try{
-				$query = "";
-			}catch(Exception $e){
-				echo "Mensagem: ".$e->getMessage();
-			}
+		public function setVelocidade($velocidade){
+			$this->velocidade = $velocidade;
+		}
+
+		public function getVelocidade(){
+			return $this->velocidade;
+		}
+
+		public function setStatus($status){
+			$this->status = $status;
+		}
+
+		public function getStatus(){
+			return $this->status;
 		}
 
 	}
